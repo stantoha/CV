@@ -13,7 +13,6 @@
         .main{
     display: grid;
    grid-template-areas: 
-   " ab ab ab ab ab ab "
    " ln ln ln ln ln ln "
    " ed ed ed ed ed ed "
    " sk sk sk sk sk sk " 
@@ -23,15 +22,7 @@
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
    gap: 0;
 }
-.header{
-    grid-template-areas: 
-    " ti ti ti ti ti ti "
-    " im im im im im im "
-    " cn cn cn cn cn cn";
-}
-/* .interests__list{
-    
-} */
+
     }
 </style>
 
@@ -46,13 +37,32 @@
 
                 <div class="col title__container">
                     <div>
-                        <h1 class="title">Anton Stoliarov</h1>                    
+                        <h3 class="title">Anton Stoliarov</h3>                    
                         <p class="sub__title">Front-End-Developer</p>
                     </div>                   
                 </div>
-                <div class="col ava__container">
-                    <img class="avatar" src="img/ava1.jpg" alt="Anton">
-                </div>
+                
+                    <div class="col about__container">
+                        <table>
+                            <tr class="col-sm info">
+                                <td>Date of birth</td>
+                                <td>25th Dec, 1986</td>
+                            </tr>
+                            <tr>
+                                <td>Relationship</td>
+                                <td>Married</td>
+                            </tr>
+
+                            <tr>
+                                <td>Nationality</td>
+                                <td>Ukrainian</td>
+                            </tr>
+
+                            </tr>
+
+                        </table>
+                    </div>
+                
                 <div class="col table__container">
                     <table>
                         <tbody>
@@ -80,154 +90,97 @@
         
         <div class="container-fluid">
             <main class="main">
-                
-                <section class="about__me">
-                    <div class="section__heading">
-                        <p class="section__title h3">
-                            About me
-                        </p>
-                    
-                    </div>
-
-                    <div class="container table__container">
-                        <table>
-                            <tr class="col-sm info">
-                                <td>Name</td>
-                                <td>Anton Stoliarov</td>
-                            </tr>
-                            <tr>
-                                <td>Date of birth</td>
-                                <td>25th Dec, 1986</td>
-                            </tr>
-                            <tr>
-                                <td>Relationship</td>
-                                <td>Married</td>
-                            </tr>
-
-                            <tr>
-                                <td>Nationality</td>
-                                <td>Ukrainian</td>
-                            </tr>
-
-                            </tr>
-
-                        </table>
-                    </div>
-                </section>
+            
 
                 <section class="language">
                     <div class="section__heading">
-                        <p class="section__title h3">
-                            Language </p>
-                    
+                        <h4 class="section__title ">
+                            Language </h4>
+                
                     </div>
-
-                    <div class="container table__container">
-                        <table>
-                            <tr class="col-md info">
-                                <td>
-                                    <label for="English">English</label></td>
-                                <td>
-                                    <progress id="English" max="100" value="75"> 75% </progress></td>
-                            </tr>
-                            <tr class="col-md info">
-                                <td>
-                                    <label for="Ukrainian">Ukrainian</label></td>
-                                <td>
-                                    <progress id="Ukrainian" max="100" value="95"> 95% </progress></td>
-                            </tr>
-                            <tr class="col-md info">
-                                <td>
-                                    <label for="Russian">Russian</label></td>
-                                <td>
-                                    <progress id="Russian" max="100" value="95"> 95% </progress></td>
-                            </tr>
-                        </table>
+                    <div class="container-fluid">
+                      <ul class="languages__list">
+                          <li class="languages__item">
+                              <b>English</b>
+                          </li>
+                          <li class="languages__item">
+                            <b>Ukrainian</b>
+                        </li>
+                        <li class="languages__item">
+                            <b>Russian</b>
+                        </li>
+                      </ul>
                     </div>
                 </section>
 
                 <section class="education">
                     <div class="section__heading">
-                        <p class="section__title h3">
-                            Education</p>                   
-                    </div>
+                        <h4 class="section__title ">
+                            Education</h4>                   
+                        </div>
 
-                    <div class="container table__container">
-                        <table class="container-fluid">
-                            <tr class="col">
-                                <td class="col">
-                                    <b>BACHELOR OF
-                                        SCIENCE DEGREE</b>
-                                        <br>
-                                    <p>(2003-2007)</p>
-                                </td>
-                                <td class="col">
-                                    <b>
-                                        Lviv Polytechnic National University
-                                    </b>
-                                    <br>
-                                    <em><small>                                        Institute of the Humanities and Social Sciences
-                                    </small>
-                                    </em>
-                                </td>
-                            </tr>
-                            <tr class="col">
-                                <td class="col">
-                                    <b>MASTER OF
-                                        SCIENCE DEGREE</b>
-                                        <br>
-                                    <p>(2007-2008)</p>
-                                   
-                                </td>
-                                <td class="col">
-                                    <b>
-                                        Lviv Polytechnic National University
-                                    </b>
-                                    <br>
-                                    <em><small>                                        Institute of the Humanities and Social Sciences
-                                    </small>
-                                    </em>
-                                </td>
 
-                            </tr>
-                            <tr class="col">
-                                <td class="col">
-                                    <b>HTML, CSS, PHP, JavaScript simulators</b>
-                                    <p>(2021)</p>                                  
-                                </td>
-                                <td class="col">
-                                    <b>
+                        <div class="container-fluid">
+                            <ul class="education__list">
+                                <li class="row education__item">
+                                    <div class="col">
+                                        <b>BACHELOR OF
+                                            SCIENCE DEGREE</b>
+                                            <br>
+                                        <p>(2003-2007)</p>
+                                    </div>
+                                    <div class="col">
+                                        <b>
+                                            Lviv Polytechnic National University
+                                        </b>
+                                    </div>   
+                                </li>
+                                <li class="row education__item">
+                                    <div class="col">
+                                        <b>MASTER OF
+                                            SCIENCE DEGREE</b>
+                                            <br>
+                                        <p>(2007-2008)</p>
+                                    </div>
+                                    <div class="col">
+                                        <b>
+                                            Lviv Polytechnic National University
+                                        </b>
+                                    </div>   
+                                </li>
+                                <li class="row education__item">
+                                    <div class="col">
+                                        <b>HTML, CSS, PHP, JavaScript simulators</b>
+                                    <p>(2021)</p> 
+                                    </div>
+                                    <div class="col">
+                                        <b>
                                         <a href="https://htmlacademy.ru/courses">HTML Academy</a>
                                     </b>
-                                    
-                                </td>
-                            </tr>
-                            <tr class="col">
-                                <td class="col">
-                                    <b>Complete JavaScript + React :</b>
-                                   
-                                    
-                                   
-                                    <p>(2021-till now)</p>
-                                    
-                                </td>
-                                <td class="col">
-                                    <b>
-                                        <a
-                                            href="https://www.udemy.com/course/javascript_full/learn/lecture/19598682#overview">UDEMY</a>
-                                    </b>
-                                
-                                </td>
-                            </tr>
-                        </table>
+                                </div>   
+                                </li>
+                                <li class="row education__item">
+                                    <div class="col">
+                                        <b>Complete JavaScript + React :</b>                                  
+                                        <p>(2021-till now)</p>
+                                    </div>
+                                    <div class="col">
+                                        <b>
+                                            <a
+                                                href="https://www.udemy.com/course/javascript_full/learn/lecture/19598682#overview">UDEMY</a>
+                                        </b>
+                                    </div>   
+                                </li>
+                            </ul>
+       
                     </div>
                 </section>
 
                 <section class="skills">
                     <div class="section__heading">
-                        <p class="section__title h3">
-                            skills </p>
-                    
+                        <h4 class="section__title ">
+                            skills </h4>
+                
                     </div>
 
                     <div class="container table__container">
@@ -235,66 +188,48 @@
                             <tr class="col-md info">
                                 <td class="col">
                                     <label for="html">HTML</label></td>
-                                <td>
-                                    <progress id="html" max="100" value="80"> 80% </progress></td>
-                            </tr>
+                                        </tr>
                             <tr class="col-md info">
                                 <td>
                                     <label for="CSS">CSS</label></td>
-                                <td>
-                                    <progress id="CSS" max="100" value="80"> 80% </progress></td>
-                            </tr>
+                                        </tr>
                             <tr class="col-md info">
                                 <td>
                                     <label for="SASS">SASS</label></td>
-                                <td>
-                                    <progress id="SASS" max="100" value="50"> 50% </progress></td>
-                            </tr>
+                                        </tr>
                             <tr class="col-md info">
                                 <td>
                                     <label for="bootstrap">Bootstrap</label></td>
-                                <td>
-                                    <progress id="bootstrap" max="100" value="60"> 60% </progress></td>
-                            </tr>
+                                        </tr>
                             <tr class="col-md info">
                                 <td>
                                     <label for="javascript">JavaScript</label></td>
-                                <td>
-                                    <progress id="javascript" max="100" value="70"> 70% </progress></td>
-                            </tr>
+                                        </tr>
                             <tr class="col-md info">
                                 <td>
                                     <label for="git">Git</label></td>
-                                <td>
-                                    <progress id="git" max="100" value="80"> 80% </progress></td>
-                            </tr>
+                                        </tr>
                             <tr class="col-md info">
                                 <td>
                                     <label for="json">JSON</label></td>
-                                <td>
-                                    <progress id="json" max="100" value="40"> 40% </progress></td>
-                            </tr>
+                                        </tr>
                             <tr class="col-md info">
                                 <td>
                                     <label for="photoshop">Photoshop</label></td>
-                                <td>
-                                    <progress id="photoshop" max="100" value="90"> 90% </progress></td>
-                            </tr>
+                                        </tr>
                             <tr class="col-md info">
                                 <td>
                                     <label for="figma">Figma</label></td>
-                                <td>
-                                    <progress id="figma" max="100" value="80"> 80% </progress></td>
-                            </tr>
+                                        </tr>
                         </table>
                     </div>
                 </section>
 
                 <section class="work__example">
                     <div class="section__heading">
-                        <p class="section__title h3">
-                            Work example</p>
-                    
+                        <h4 class="section__title ">
+                            Work example</h4>
+                
                     </div>
                     <div class="container table__container">
                         <table>
@@ -330,9 +265,8 @@
 
                 <section class="interests">
                     <div class="section__heading">
-                        <p class="section__title h3">interests</p>
+                        <h4 class="section__title ">interests</h4>
                     </div>
-
                     <ul class="interests__list">
 
                         <li class="interests__item">
@@ -362,14 +296,9 @@
                     </ul>
                 </section>
 
-                
-
             </main>
         </div>
-        
 
-
-        
     </div>
     <script src="script.js"></script>
 </body>
@@ -382,31 +311,3 @@
 
 
 
-<!-- <style>
-    @media screen and (max-width: 1220px) {
-        .border {
-            display: none;
-        }
-
-        .main {
-            flex-wrap: wrap;
-        }
-
-        .header-menu {
-            flex-wrap: wrap;
-            flex-direction: column;
-            align-items: center;
-            padding: 0;
-            margin: 0;
-        }
-
-        .divider {
-            position: absolute;
-            display: none;
-        }
-
-        .header-menu li {
-            margin-bottom: 20px;
-        }
-    }
-</style> -->

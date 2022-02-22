@@ -2,8 +2,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;            
-    font-size: 2.5em;
+    font-size: 1em;
     font-weight: 500;
     color: black;
     width: 100%;
@@ -21,23 +20,23 @@ body{
     margin: 10px auto;
     background-color: rgba(0, 0, 0,0.5);
     color: white;
-    padding:20px 10px ;
+    padding: 10px ;
     border-radius: 10px/10px;
-    box-shadow: 0 0 15px #d2a84c;
+    box-shadow: 0 0 10px #d2a84c;
     grid-template-areas: 
-    " ti ti ti ti im im "
-    " cn cn cn .  im im "
-    " cn cn cn .  im im ";
+    " ti ti ti ti ti ti "
+    " cn cn cn ab ab ab  "
+    " cn cn cn ab ab ab  ";
    grid-template-columns: 1fr 1fr  1fr 1fr  1fr 1fr ;
 }
 
-img.avatar{
+/* img.avatar{
     max-width: 190px;
     height: auto;
     box-shadow:0 0 25px  rgba(255, 255, 255,0.2);
     border-radius: 10px/10px;
     margin: 20px ;
-}
+} */
 
 .header table td{
     color: #d2a84c;
@@ -47,36 +46,31 @@ img.avatar{
 }
 
 table td a{
-    margin: 15px;
-    padding: 15px;
+    margin: 10px;
+    padding: 10px;
     text-transform:uppercase;
     color: #d2a84c;
 }
 
 .header table a{
-    padding: 15px;
+    padding: 10px;
     color: rgba(255, 255, 255,0.7);
     text-transform: lowercase;
 }
 
 table td{
-    padding: 5px;
+    padding: 10px;
 }
 
-.header .ava__container,
+.header .about__container,
 .header .table__container,
 .header .title__container{
     padding:10px ;
-   
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    
-}
-.header .ava__container{
-    grid-area:im ;
     
 }
 
@@ -88,17 +82,20 @@ table td{
     grid-area:ti ;
 }
 
-h1.title{
+.header .about__container{
+    grid-area:ab ;
+}
+
+h3.title{
     color: #d2a84c;
-    font-size: 2em;
-    padding: 15px;
+    font-size: 1.5em;
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 15px;
     border-radius: 10px/10px;
-    text-shadow:2px 0 5px rgba(255, 255, 255,0.5)  ,
-    -2px 0 5px rgba(255, 255, 255,0.4) ;
-   
+    text-shadow:2px 0 5px rgba(255, 255, 255,0.7)  ,
+    -2px 0 5px rgba(255, 255, 255,0.7) ;
+    padding: 10px;
     margin: 0;
 }
 
@@ -115,40 +112,30 @@ p.sub__title{
     text-transform: uppercase;
 }
 
-/* .contacts__item img{
-    display: block;
-    width: 50px;
-    height: 30px;
-    background-color: rgba(255, 255, 255,0.5);
-    border-radius: 50%;
-} */
-
 .main{
     display: grid;
    grid-template-areas: 
-   " ab ab ab ln ln ln "
    " ed ed ed ed ed ed "
+   " sk sk sk ln ln ln "
    " sk sk sk we we we "
-   " sk sk sk in in in "
-   ;
+   " sk sk sk in in in " ;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
    gap: 10px;
    
 }
 
 section{
-    padding: 15px;
-    margin:15px ;
+    padding: 10px;
+    margin:10px ;
     border-radius: 10px/10px;
     background-color: rgba(0, 0, 0,0.1);
-    box-shadow:inset 0 0 15px rgba(0, 0, 0,0.5);
+    box-shadow:inset 0 0 10px rgba(0, 0, 0,0.5);
     box-shadow: 0 0 10px rgba(0, 0, 0,0.5) ,
     inset 0 0 50px rgba(0, 0, 0,0.1); 
 }
 .table__container b{
     font-size: 1em;
     width: 50%;
-   
     text-transform: uppercase;
     margin:10px;
     text-align: center;
@@ -157,36 +144,6 @@ section{
     font-weight: bold;
     font-size: 1em;
     margin:10px;
-    
-}
-
-::-webkit-progress-value{
-    color: rgba(0, 0, 0,1);
-}
-::-webkit-progress-bar {
-    background: grey;
-}
-::-webkit-progress-value {
-    background:#d2a84c;
-}
-::-moz-progress-bar {
-    background:#d2a84c;
-}
-
-progress {
-    display: block;
-    color:#d2a84c;
-    background: grey;
-    border: 3px solid#d2a84c;
-    border-radius: 5px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 170px;
-    height: 20px;
-    font-size:2em;
-    font-family: sans-serif;
-    text-align: center;
 }
 
 tr h4,
@@ -195,10 +152,6 @@ tr a{
     text-align: center;
 }
 
-.about__me{
-    grid-area:ab ;
-    text-transform: uppercase;
-}
 
 .skills{
     grid-area:sk ;
@@ -208,16 +161,13 @@ tr a{
 .education{
     grid-area:ed ;
 }
-.education table{
-    display: block;
-    text-align: center;
+.education__item,
+.language__item{
+    padding: 10px;
 }
-
 .education td,
 .education tr{
     border-bottom: 15px solid rgba(255, 255, 255,0.2);
-   /*  padding: 15px  ;
-    margin: 15px; */
     border-radius: 15px/15px;
     border-collapse:collapse ;
     width: 60%;
@@ -246,9 +196,8 @@ tr a{
     margin: 0 auto;
 }
 
-p.section__title,
-button.section__button{
-    font-size:1.5em;
+h4.section__title{
+    font-size:1em;
     font-weight: 500;
     color: #d2a84c;
     margin: 0;
@@ -257,8 +206,6 @@ button.section__button{
 .table__container table{
     display: block;
 }
-
-
 
 .interests__list{
     display: flex;
@@ -275,14 +222,14 @@ li.interests__item{
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 5px;
+    padding: 10px;
 }
 
 .interests__item img{
     width: 75px;
     height: 75px;
-    padding: 15px;
-    margin: 5px; 
+    padding: 10px;
+    margin: 10px; 
     background-color: rgba(255, 255, 255,0.3);
     border-radius: 20%;
 }
